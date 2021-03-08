@@ -1,0 +1,6 @@
+LoginPage.class
+Models\UserModel.class
+helpers\FileInteract.class
+servlets\Register.class
+WelcomePage.class
+SearchServlet.class

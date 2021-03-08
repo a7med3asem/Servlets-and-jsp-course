@@ -1,15 +1,15 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.asim</groupId>
-    <artifactId>First-ServletTask</artifactId>
+    <artifactId>HelloWorld</artifactId>
     <version>1.0.0-SNAPSHOT</version>
-    <packaging>war </packaging>
+    <packaging>war</packaging>
     <dependencies>
         <dependency>
-            <groupId>jakarta.platform </groupId>
+            <groupId>jakarta.platform</groupId>
             <artifactId>jakarta.jakartaee-api</artifactId>
-            <version>9.0.0 </version>
-            <scope>provided </scope>
+            <version>9.0.0</version>
+            <scope>provided</scope>
         </dependency>
     </dependencies>
     <build>
@@ -23,17 +23,17 @@
                 </configuration>
             </plugin>
             <plugin>
-                <groupId>org.apache.maven.plugins </groupId>
-                <artifactId>maven-war-plugin </artifactId>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-war-plugin</artifactId>
                 <version>3.3.0 </version>
                 <configuration>
-                    <failOnMissingWebXml>false </failOnMissingWebXml>
+                    <failOnMissingWebXml>false</failOnMissingWebXml>
                 </configuration>
             </plugin>
             <plugin>
                 <groupId>org.apache.tomcat.maven</groupId>
-                <artifactId>tomcat7-maven-plugin </artifactId>
-                <version>2.2 </version>
+                <artifactId>tomcat7-maven-plugin</artifactId>
+                <version>2.2</version>
                 <configuration>
                     <username>ahmed</username>
                     <password>ahmed</password>
