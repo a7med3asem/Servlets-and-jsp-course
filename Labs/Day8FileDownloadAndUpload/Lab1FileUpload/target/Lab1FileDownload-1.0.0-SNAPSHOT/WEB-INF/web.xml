@@ -1,0 +1,68 @@
+<web-app xmlns = "https://jakarta.ee/xml/ns/jakartaee" 
+            xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance" 
+            xsi:schemaLocation= "https://jakarta.ee/xml/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd" 
+            version= "5.0"
+            metadata-complete = "true">
+    <resource-ref>
+        <description>DB Connection</description>
+        <res-ref-name>jdbc/TestDB</res-ref-name>
+        <res-type>javax.sql.DataSource</res-type>
+        <res-auth>Container</res-auth>
+    </resource-ref>
+    <filter>
+        <filter-name>LoginFilter</filter-name>
+        <filter-class>controllers.filters.LoginFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>LoginFilter</filter-name>
+        <url-pattern>/WelcomePage</url-pattern>
+    </filter-mapping>
+    <!-- <servlet>
+        <servlet-name>Welcome</servlet-name>
+        <servlet-class>controllers.servlets.WelcomeServletController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Welcome</servlet-name>
+        <url-pattern>/WelcomePage</url-pattern>
+    </servlet-mapping> -->
+    <!-- <servlet>
+        <servlet-name>CheckCookies</servlet-name>
+        <servlet-class>controllers.servlets.CheckCookiesServletController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CheckCookies</servlet-name>
+        <url-pattern>/CheckCookiesServlet</url-pattern>
+    </servlet-mapping> -->
+    <servlet>
+        <servlet-name>FileDownloadServlet</servlet-name>
+        <servlet-class>controllers.servlets.FileDownloadServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>FileDownloadServlet</servlet-name>
+        <url-pattern>/FileDownloadServlet</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>FileUploadServlet</servlet-name>
+        <servlet-class>controllers.servlets.FileUploadServlet</servlet-class>
+
+        <multipart-config>
+            <location>C:\newFiles\</location>
+            <max-file-size>20848820</max-file-size>
+        </multipart-config>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>FileUploadServlet</servlet-name>
+        <url-pattern>/FileUploadServlet</url-pattern>
+    </servlet-mapping>
+    <listener>
+        <listener-class>controllers.listeners.LifeCycleEventListener</listener-class>
+    </listener>
+    <listener>
+        <listener-class>controllers.listeners.SessionsListener</listener-class>
+    </listener>
+    <listener>
+        <listener-class>controllers.listeners.RequestsListener</listener-class>
+    </listener>
+
+
+</web-app>

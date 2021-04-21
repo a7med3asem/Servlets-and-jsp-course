@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="First-ServletTask:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>First-ServletTask</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="First-ServletTask-1.0.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="First-ServletTask:war exploded" />
+    </root>
+  </artifact>
+</component>

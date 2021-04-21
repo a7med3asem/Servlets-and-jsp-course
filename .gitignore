@@ -21,3 +21,6 @@
 
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
+/Labs/Day6JSTL/Day6Lab3CustomTags/target/
+/Labs/Day6JSTL/Day6Lab1SearchForm/target/
+/Practice/Hello/target/

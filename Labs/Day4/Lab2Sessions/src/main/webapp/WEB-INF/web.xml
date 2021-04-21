@@ -18,10 +18,6 @@
         <servlet-class>LoginPage</servlet-class>
     </servlet>
     <servlet>
-        <servlet-name>Welcome</servlet-name>
-        <servlet-class>WelcomePage</servlet-class>
-    </servlet>
-    <servlet>
         <servlet-name>CheckCookies</servlet-name>
         <servlet-class>CheckCookiesServlet</servlet-class>
     </servlet>
@@ -29,6 +25,10 @@
         <servlet-name>Registeration</servlet-name>
         <url-pattern>/RegisterationForm</url-pattern>
     </servlet-mapping>
+    <servlet>
+        <servlet-name>Welcome</servlet-name>
+        <servlet-class>WelcomePage</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>Welcome</servlet-name>
         <url-pattern>/WelcomePage</url-pattern>
